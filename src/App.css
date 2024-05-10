@@ -1,38 +1,331 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    list-style-type: none !important;
+    text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.common_btn {
+    border-radius: 1.01px;
+    background: #FCE500;
+    border: 0;
+    padding: 13.47px 8.13px;
+    transition:  all linear 300ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.btn_border {
+    border: 0.5px solid #FCE500;
+    padding: 6.75px 6.44px 6.31px 7.01px;
+    background: transparent;
+    border-radius: 1.01px;
+    transition:  all linear 300ms;
+
+}
+.btn_border:hover .common_btn{
+    background: transparent !important;
+    color: white !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.commonbtn_line {
+    width: 15px;
+    min-height: 1px;
+    background: black;
+    position: absolute;
+    left: 30px;
+    bottom: -0.8px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    max-width: 1164px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mt-54 {
+    margin-top: 54px;
+}
+
+/* hero */
+.hero-bg-img {
+    background-image: url(../src/images/png/hero_img.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.py-13 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.hero_heading {
+    max-width: 616px;
+}
+
+.pt-109 {
+    padding-top: 109px;
+}
+
+.pb-96 {
+    padding-bottom: 48px;
+}
+
+img[alt="hyper"] {
+    max-width: 338.04px;
+    width: 100%;
+}
+
+/* download */
+.download_card {
+    max-width: 1140px;
+    border-radius: 24px;
+    background: #33333330;
+    border: 1px solid #FCE500C7;
+    padding: 24px 14px 24px 14px;
+}
+
+.download_bg {
+    background: #010101;
+    margin-top: -2px;
+}
+
+.pt-182 {
+    padding-top: 48px;
+}
+
+/* inner */
+.name_input {
+
+    background: #F2F2F31A;
+    padding: 9px 16px 8px 15px;
+    border-radius: 3px;
+    max-width: 522px;
+    outline: none;
+    border: 0.5px solid transparent;
+    width: 100%;
+}
+
+.name_input:focus-visible {
+    border: 0.5px solid #FCE500;
+}
+
+.name_input::placeholder {
+    color: white;
+}
+
+.footer_line {
+    border: 1px solid #F2F2F3;
+    opacity: 54%;
+}
+
+.pt-151 {
+    padding-top: 38px;
+}
+
+.pt-29 {
+    padding-top: 28px;
+}
+
+.mt-13 {
+    margin-top: 13px;
+}
+
+img[alt="laptop"] {
+    max-width: 530.58px;
+}
+
+.pb-168 {
+    padding-bottom: 42px;
+}
+
+/* soccer-fitness */
+.soccer_fitness_bg {
+    background-image: url(../src/images/png/soccer-fitnes.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.soccer_heading {
+    max-width: 704px;
+}
+
+img[alt="soccer"] {
+    max-width: 304px;
+    width: 100%;
+}
+
+/* about */
+.author_pera {
+    max-width: 520px;
+}
+
+img[alt="author"] {
+    max-width: 539px;
+    width: 100%;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.pt-115 {
+    padding-top: 35px;
+}
+
+
+/* myths */
+.avoid_card {
+    max-width: 1140px;
+    width: 100%;
+    border-radius: 16px;
+
+    padding: 24px 24px 24px 24px;
+}
+
+.ipad_postion {
+    position: unset;
+    right: 0;
+    bottom: 20px;
+}
+
+img[alt="ipadpro"] {
+    max-width: 658.09px;
+    width: 100%;
+}
+
+.pt-312 {
+    padding-top: 50px;
+}
+
+.pt-68 {
+    padding-top: 30px;
+}
+
+.mt-19 {
+    margin-top: 19px;
+}
+
+.avoid_bg_img {
+    background-image: url(../src/images/png/avoid_bg_img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.svg_box {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background: #FCE500;
+
+}
+
+/* ellipes */
+.downmolad_ellipe {
+    position: absolute;
+    right: 0;
+    top: -3%;
+}
+
+.blur_ellipes {
+    width: 910px;
+    height: 386px;
+    background: #FCE500;
+    filter: blur(1000px);
+    position: absolute;
+    top: 106px;
+    left: 72px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.inner_ellipes2 {
+    width: 388px;
+    height: 429px;
+    background: #FCE500;
+    filter: blur(500px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+.inner_ellipes {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about_rightellipe {
+    position: absolute;
+    top: 16%;
+    right: 0;
+}
+
+.about_leftellipe {
+    position: absolute;
+    bottom: -33%;
+    left: 0;
+}
+
+.about_BALL {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-142px, 97px);
+    z-index: 3;
+}
+
+@media (min-width:768px) {
+    .download_card {
+        padding: 63px 53px 50px 54px;
+    }
+
+    .avoid_card {
+        padding: 52px 52px 43px 50px;
+    }
+
+    .pt-182 {
+        padding-top: 182px;
+    }
+
+    .pt-68 {
+        padding-top: 68px;
+    }
+
+    .pb-96 {
+        padding-bottom: 96px;
+    }
+
+    .pb-168 {
+        padding-bottom: 168px;
+    }
+
+    .pt-151 {
+        padding-top: 151px;
+    }
+
+    .pt-115 {
+        padding-top: 115px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .ipad_postion {
+        position: absolute;
+    }
+
+    .pt-312 {
+        padding-top: 312px;
+    }
+
 }

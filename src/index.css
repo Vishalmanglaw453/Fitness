@@ -1,13 +1,330 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+:root {
+
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 15px;
+  --fs-xl: 26.4px;
+  --fs-2xl: 18px;
+  --fs-3xl: 21px;
+
+
+  --color-yellow: #FCE500;
+  --color-grey: #F2F2F3;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-14 {
+  font-size: var(--fs-sm);
+}
+
+.text-16 {
+  font-size: var(--fs-md);
+}
+
+.text-18 {
+  font-size: var(--fs-lg);
+}
+
+.text-26 {
+  font-size: var(--fs-xl);
+}
+
+.text-30 {
+  font-size: var(--fs-2xl);
+}
+
+.text-45 {
+  font-size: var(--fs-3xl);
+}
+
+.color-yellow {
+  color: var(--color-yellow);
+}
+.bg-yellow {
+  background: var(--color-yellow) !important;
+}
+
+.color-grey {
+  color: var(--color-grey);
+}
+
+
+
+
+.lh-16 {
+  line-height: 16px;
+}
+
+.lh-59 {
+  line-height: 31px;
+}
+
+.lh-14 {
+  line-height: 14px;
+}
+
+.lh-28 {
+  line-height: 23.8px;
+}
+
+.lh-37 {
+  line-height: 37.5px;
+}
+
+.lh-21 {
+  line-height: 21.86px;
+}
+
+.lh-49 {
+  line-height: 26px;
+}
+
+.lh-33 {
+  line-height: 33px;
+}
+
+.lh-23 {
+  line-height: 23.31px;
+}
+
+
+@font-face {
+  font-family: "Eurostile";
+  src: url("../src/font-family/EurostileBQ-BoldExtended.otf");
+}
+
+.ff-Eurostile {
+  font-family: "Eurostile";
+}
+
+.ff-Manrope {
+  font-family: "Manrope", sans-serif;
+}
+@media (min-width:576px) {
+  :root {
+
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 26.4px;
+    --fs-2xl: 30px;
+    --fs-3xl: 45px;
+
+  }
+  
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+  
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+  
+  .text-18 {
+    font-size: var(--fs-lg);
+  }
+  
+  .text-26 {
+    font-size: var(--fs-xl);
+  }
+  
+  .text-30 {
+    font-size: var(--fs-2xl);
+  }
+  
+  .text-45 {
+    font-size: var(--fs-3xl);
+  }
+  
+
+  
+  
+  .lh-16 {
+    line-height: 16px;
+  }
+  
+  .lh-59 {
+    line-height: 59.4px;
+  }
+  
+  .lh-14 {
+    line-height: 14px;
+  }
+  
+  .lh-28 {
+    line-height: 28.8px;
+  }
+  
+  .lh-37 {
+    line-height: 37.5px;
+  }
+  
+  .lh-21 {
+    line-height: 21.86px;
+  }
+  
+  .lh-49 {
+    line-height: 49.56px;
+  }
+  
+  .lh-33 {
+    line-height: 33px;
+  }
+  
+  .lh-23 {
+    line-height: 23.31px;
+  }
+}
+@media (min-width:768px) {
+  :root {
+
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 14px;
+    --fs-xl: 26.4px;
+    --fs-2xl: 30px;
+    --fs-3xl: 45px;
+
+  }
+  
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+  
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+  
+  .text-18 {
+    font-size: var(--fs-lg);
+  }
+  
+  .text-26 {
+    font-size: var(--fs-xl);
+  }
+  
+  .text-30 {
+    font-size: var(--fs-2xl);
+  }
+  
+  .text-45 {
+    font-size: var(--fs-3xl);
+  }
+  
+
+  
+  
+  .lh-16 {
+    line-height: 16px;
+  }
+  
+  .lh-59 {
+    line-height: 59.4px;
+  }
+  
+  .lh-14 {
+    line-height: 14px;
+  }
+  
+  .lh-28 {
+    line-height: 28.8px;
+  }
+  
+  .lh-37 {
+    line-height: 37.5px;
+  }
+  
+  .lh-21 {
+    line-height: 21.86px;
+  }
+  
+  .lh-49 {
+    line-height: 49.56px;
+  }
+  
+  .lh-33 {
+    line-height: 33px;
+  }
+  
+  .lh-23 {
+    line-height: 23.31px;
+  }
+}
+@media (min-width:992px) {
+  :root {
+
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 26.4px;
+    --fs-2xl: 30px;
+    --fs-3xl: 45px;
+
+  }
+  
+  .text-14 {
+    font-size: var(--fs-sm);
+  }
+  
+  .text-16 {
+    font-size: var(--fs-md);
+  }
+  
+  .text-18 {
+    font-size: var(--fs-lg);
+  }
+  
+  .text-26 {
+    font-size: var(--fs-xl);
+  }
+  
+  .text-30 {
+    font-size: var(--fs-2xl);
+  }
+  
+  .text-45 {
+    font-size: var(--fs-3xl);
+  }
+  
+
+  
+  
+  .lh-16 {
+    line-height: 16px;
+  }
+  
+  .lh-59 {
+    line-height: 59.4px;
+  }
+  
+  .lh-14 {
+    line-height: 14px;
+  }
+  
+  .lh-28 {
+    line-height: 28.8px;
+  }
+  
+  .lh-37 {
+    line-height: 37.5px;
+  }
+  
+  .lh-21 {
+    line-height: 21.86px;
+  }
+  
+  .lh-49 {
+    line-height: 49.56px;
+  }
+  
+  .lh-33 {
+    line-height: 33px;
+  }
+  
+  .lh-23 {
+    line-height: 23.31px;
+  }
 }
